@@ -2,7 +2,6 @@
 :root {
     --fuenteheading: 'PT Sans', sans-serif;
     --fuenteparrafos: 'Open Sans', sans-serif;
-
     --primario: #e3c57b ;
     --secundario: #b5ac96;
     --blanco: #ffffff;
@@ -98,6 +97,23 @@ nav {
     padding-bottom: 1rem;
 }
 
+@media screen and (max-width: 992px) {
+    .contenedor-cabecera {
+      flex: 50%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    nav {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .contenedor-cabecera {
+      flex-direction: column;
+    }
+  }
+
 /*PSEUDOELEMENTOS*/
 .p-inicio::first-letter {
     font-size: 150%;
@@ -174,6 +190,8 @@ section {
     background-color: var(--primario);
 }
 
+
+
 /*FOOTER*/
 footer {
     background-color: var(--negro);
@@ -235,6 +253,7 @@ cursor: pointer;
       max-width: 100%;
     }
   }
+
 
   /*FORMULARIO*/
   .contenedor-formulario {
@@ -325,6 +344,7 @@ cursor: pointer;
     margin-top: 1rem;
 }
 
+
 /*RELACION IMAGENES*/
 .Foto {
     width: 100vw;
@@ -354,5 +374,12 @@ cursor: pointer;
     .Foto {
         max-width: 900px;
         max-height: 1200px;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .Foto {
+        max-width: 400px;
+        max-height: 600px;
     }
 }
