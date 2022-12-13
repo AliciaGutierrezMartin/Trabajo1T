@@ -23,7 +23,7 @@ html {
 body {
     font-family: var(--fuenteparrafos);
     font-size: 1.6rem;
-    line-height: 2;
+    line-height: 1.6r;
     margin: 0;
 }
 
@@ -169,6 +169,7 @@ h3 {
     margin-top: 0.3rem;    
     font-size: clamp(1rem, 1.5vw, 2.25rem);
     margin-bottom: 0;
+    overflow: hidden;
    }
 
 #seccion {
