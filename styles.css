@@ -166,7 +166,9 @@ h3 {
 
    
     p {
-    font-size: clamp(1rem, 3vw, 2.25rem);
+    margin-top: 0.3rem;    
+    font-size: clamp(1rem, 1.5vw, 2.25rem);
+    margin-bottom: 0;
    }
 
 #seccion {
